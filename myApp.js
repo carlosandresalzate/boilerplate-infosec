@@ -8,6 +8,7 @@ app.use(
   helmet.hidePoweredBy(),
   helmet.frameguard({ action: "deny" }),
   helmet.xssFilter(),
+  helmet.noSniff(),
 )
 
 
