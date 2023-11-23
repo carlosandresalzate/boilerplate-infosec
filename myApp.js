@@ -10,7 +10,11 @@ app.use(
   helmet.xssFilter(),
   helmet.noSniff(),
   helmet.ieNoOpen(),
-)
+  helmet.hsts({
+    maxAge: ninetyDaysInSeconds,
+    force: true,
+  })
+);
 
 
 
