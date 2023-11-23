@@ -9,6 +9,7 @@ app.use(
   helmet.frameguard({ action: "deny" }),
   helmet.xssFilter(),
   helmet.noSniff(),
+  helmet.ieNoOpen(),
 )
 
 
