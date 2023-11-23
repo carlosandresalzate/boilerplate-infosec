@@ -7,6 +7,7 @@ const ninetyDaysInSeconds = 90 * 24 * 60 * 60;
 app.use(
   helmet.hidePoweredBy(),
   helmet.frameguard({ action: "deny" }),
+  helmet.xssFilter(),
 )
 
 
